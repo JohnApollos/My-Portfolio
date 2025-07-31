@@ -6,7 +6,7 @@ This is a personal portfolio website showcasing my skills, projects, and backgro
 
 ---
 
-## ✨ Features
+##  Features
 
 -   **Modern UI/UX:** Clean, single-page layout with a dark theme and glassmorphism effects.
 -   **Fully Responsive:** The layout adapts seamlessly to all device sizes, from mobile phones to desktops.
@@ -16,7 +16,7 @@ This is a personal portfolio website showcasing my skills, projects, and backgro
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 -   **HTML5:** For the structure and content of the website.
 -   **CSS3:** For all styling, layout (Flexbox & Grid), animations, and responsiveness.
