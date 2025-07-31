@@ -122,6 +122,32 @@ nav ul {
     background: var(--bg-color) url('https://www.transparenttextures.com/patterns/cubes.png');
 }
 
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Puts space between text and image */
+    gap: 2rem;
+}
+
+.hero-content {
+    flex: 1; /* Allows the text content to take up available space */
+    text-align: left; /* Aligns text to the left */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.profile-photo {
+    width: 300px; /* Control the size of your photo */
+    height: 300px;
+    border-radius: 50%; /* Makes the photo circular */
+    border: 5px solid var(--primary-color); /* Adds a colored border */
+    object-fit: cover; /* Prevents the image from being distorted */
+    box-shadow: 0 0 25px rgba(0, 170, 255, 0.4); /* Adds a subtle glow */
+}
+
 /* --- Skills Section --- */
 .skills-grid {
     display: flex;
@@ -226,5 +252,20 @@ footer {
     
     section {
         padding: 4rem 0;
+    }
+
+    .hero-container {
+        flex-direction: column-reverse; /* Stacks image on top of text on mobile */
+        text-align: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 2rem;
     }
 }
