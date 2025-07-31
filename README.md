@@ -3,7 +3,6 @@
 This is a personal portfolio website showcasing my skills, projects, and background using only vanilla HTML and CSS.
 
 ![Screenshot of the portfolio website](./screenshot.png)
-*(To add a screenshot, take a picture of your running website, name it `screenshot.png`, and place it in your project folder.)*
 
 ---
 
