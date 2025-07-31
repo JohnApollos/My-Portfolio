@@ -1,0 +1,230 @@
+/* --- CSS Variables --- */
+/* Using variables makes it easy to change the color scheme consistently. */
+:root {
+    --primary-color: #00aaff; /* A vibrant blue */
+    --secondary-color: #0abdc6; /* A teal accent */
+    --bg-color: #0f172a; /* A dark navy blue */
+    --surface-color: rgba(255, 255, 255, 0.05); /* For glass effect */
+    --border-color: rgba(255, 255, 255, 0.1);
+    --text-color: #e2e8f0; /* An off-white */
+    --heading-color: #ffffff;
+}
+
+/* --- Global Resets & Base Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling when clicking nav links */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* --- Utility Classes --- */
+.container {
+    max-width: 1100px;
+    margin: 0 auto; /* Centers the content */
+    padding: 0 2rem;
+}
+
+/* --- Typography --- */
+h1, h2, h3 {
+    color: var(--heading-color);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+section {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+    color: #fff;
+    transform: translateY(-3px); /* Lifts the button slightly on hover */
+}
+
+/* --- Header & Navigation --- */
+header {
+    background: rgba(15, 23, 42, 0.8);
+    -webkit-backdrop-filter: blur(10px); /* Frosted glass effect for Safari */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+    position: fixed; /* Makes the header stick to the top */
+    width: 100%;
+    z-index: 1000; /* Ensures header stays on top of other content */
+}
+
+nav.container {
+    display: flex;
+    justify-content: space-between; /* Pushes logo to the left and links to the right */
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; /* Space between nav items */
+}
+
+/* --- Hero Section --- */
+#hero {
+    height: 100vh; /* Takes up the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--bg-color) url('https://www.transparenttextures.com/patterns/cubes.png');
+}
+
+/* --- Skills Section --- */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* --- Projects Section --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates a responsive grid */
+    gap: 2rem;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: var(--surface-color);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.project-card h3 {
+    color: var(--primary-color);
+}
+
+.project-card p {
+    flex-grow: 1; /* Pushes the link to the bottom, making cards of different heights look uniform */
+}
+
+
+/* --- Contact Section --- */
+.contact-details {
+    margin: 2rem 0;
+    line-height: 2; /* Adds extra spacing between the email and phone lines */
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    background: var(--surface-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    border-top: 1px solid var(--border-color);
+}
+
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Stacks nav items on smaller screens */
+    nav.container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    section {
+        padding: 4rem 0;
+    }
+}
