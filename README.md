@@ -23,3 +23,7 @@ This is a personal portfolio website showcasing my skills, projects, and backgro
 -   **Formspree:** For handling the contact form submissions.
 
 ---
+
+## Viewing
+
+- Check out the porfolio on https://johnapollosportfolio.netlify.app/
