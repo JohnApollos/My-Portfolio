@@ -2,7 +2,7 @@
 
 This is a personal portfolio website showcasing my skills, projects, and background using only vanilla HTML and CSS.
 
-![Screenshot of the portfolio website](./screenshot.png)
+
 
 ---
 
