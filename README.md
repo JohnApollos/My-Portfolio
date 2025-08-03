@@ -26,4 +26,4 @@ This is a personal portfolio website showcasing my skills, projects, and backgro
 
 ## Viewing
 
-- Check out the porfolio on https://johnapollosportfolio.netlify.app/
+- Check out the portfolio on https://johnapollosportfolio.netlify.app/
