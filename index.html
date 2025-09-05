@@ -1,142 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Apollos Olal Onyango | Data Scientist and Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Basic -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>John Apollos Olal Onyango | Data Scientist & Developer</title>
+  <meta name="description" content="Portfolio of John Apollos Olal Onyango — BSc Data Science & Analytics student. Projects in data analysis, ML, web apps, and systems. Based in Nairobi, Kenya." />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="John Apollos — Data Scientist & Developer" />
+  <meta property="og:description" content="Projects, skills, and contact. Data Science & Analytics student (JKUAT)." />
+  <meta property="og:image" content="assets/screenshot.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://johnapollos.github.io/My-Portfolio/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Plausible Analytics (privacy-friendly) -->
+  <!-- CHANGE data-domain to your actual published domain (e.g., johnapollos.github.io or yourcustomdomain.com) -->
+  <script defer data-domain="johnapollos.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <nav class="container">
+      <a href="#" class="logo">John Apollos</a>
+      <ul>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="socials">
+        <a href="mailto:johnapollosolal@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/john-apollos" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/JohnApollos" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </nav>
+  </header>
 
-    <header>
-        <nav class="container">
-            <a href="#" class="logo">John Apollos Olal Onyango</a>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="hero">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <h1>Solving Problems with Data and Code</h1>
-                    <p class="subtitle">A dedicated Data Science and Analytics student passionate about turning raw data into actionable insights and building intelligent applications.</p>
-                    <a href="#projects" class="btn">View My Work</a>
-                </div>
-                <div class="hero-image">
-                    <img src="profile-photo.jpg" alt="Profile photo of John Apollos Olal Onyango" class="profile-photo">
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="container">
-            <h2>About Me</h2>
-            <p>I am a Data Science and Analytics student at JKUAT, passionate about turning data into insights, building innovative solutions and also a passion for technology. My journey in tech is driven by a desire to solve real-world problems and continuously learning through hands-on projects. I thrive in collaborative environments and am always eager to learn new technologies and methodologies to enhance my skill set.</p>
-        </section>
-
-        <section id="education" class="container">
-            <h2>Educational Background</h2>
-            <li><strong>Bachelor of Science in Data Science and Analytics</strong><br>Jomo Kenyatta University of Agriculture and Technology (JKUAT), Nairobi, Kenya<br>September 2023 – 2027 (Expected)</li>
-            <li><strong>Virtual Assistant Skills Certification</strong><br>ALX Academy, November 2024</li>
-            <li><strong>Software Development</strong><br>PLP Academy, In Progress</li>
-            <a href="My_CV.pdf" class="btn" download>Download CV</a>
-        </section>
-
-        <section id="skills" class="container">
-            <h2>Programming Languages & Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">Python</div>
-                <div class="skill-card">JavaScript</div>
-                <div class="skill-card">Java</div>
-                <div class="skill-card">C</div>
-                <div class="skill-card">C++</div>
-                <div class="skill-card">SQL</div>
-                <div class="skill-card">HTML5</div>
-                <div class="skill-card">Git & GitHub</div>
-                <div class="skill-card">REST APIs</div>
-            </div>
-        </section>
-
-        <section id="interests" class="container">
-            <h2>Interests</h2>
-            <p>My professional interests lie at the intersection of web development, machine learning, and cloud computing. I am fascinated by the potential of AI to create smarter, more personalized applications and am actively exploring technologies like TensorFlow and cloud platforms like AWS and Google Cloud to build next-generation solutions.</p>
-        </section>
-
-        <section id="projects" class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <h3>Startup Growth Analysis</h3>
-                    <p>Clustering analysis and exploratory data visualization on startup growth datasets using Python and Jupyter Notebooks.</p>
-                    <a href="https://github.com/JohnApollos/Startup_Growth_And_Investment_Data_Analysis" target="_blank" rel="noopener">View on GitHub</a>
-                </article>
-                <article class="project-card">
-                    <h3>Stellar Patisserie Website</h3>
-                    <p>A responsive site for a bakery business with React.js and Django, featuring an order management system.</p>
-                    <a href="https://github.com/JohnApollos/Startup_Growth_And_Investment_Data_Analysis" target="_blank" rel="noopener">View on GitHub</a>
-                </article>
-                <article class="project-card">
-                    <h3>USA Housing Data Visualization</h3>
-                    <p>Analyzed U.S. housing market data using Jupyter Notebooks, visualizing trends and patterns.</p>
-                    <a href="https://github.com/JohnApollos/USA-Data-Housing-Analysis" target="_blank" rel="noopener">View on GitHub</a>
-                </article>
-                <article class="project-card">
-                    <h3>Apollos Kitchen App</h3>
-                    <p>An interactive web application using JavaScript, focusing on user-friendly features.</p>
-                    <a href="https://github.com/JohnApollos/apollos-kitchen" target="_blank" rel="noopener">View on GitHub</a>
-                </article>
-                <article class="project-card">
-                    <h3>Bank Marketing Classification</h3>
-                    <p>Analyzes term deposit client behavior to predict subscriptions. Preprocessing & EDA reveal key factors like job, education, & past campaigns.</p>
-                    <a href="https://github.com/JohnApollos/apollos-kitchen" target="_blank" rel="noopener">View on GitHub</a>
-                </article>
-                <article class="project-card">
-                    <h3>Odoo 18.0 Purchase Request and RFQ Multi-Vendor Modules Custom Development</h3>
-                    <p>This project consists of two custom Odoo 18.0 modules developed to enhance the procurement process.</p>
-                    <a href="https://github.com/JohnApollos/odoo-assignment-submission" target="_blank" rel="noopener">View on GitHub</a>
-                </article>
-            </div>
-        </section>
-
-        <section id="contact" class="container">
-            <h2>Get In Touch</h2>
-            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of an ambitious vision. Feel free to reach out!</p>
-            <div class="contact-details">
-    <p>Email: <a href="mailto:johnapollosolal@gmail.com">johnapollosolal@gmail.com</a></p>
-    <p>Phone: <a href="tel:+254745648512">+254 745648512</a></p>
-</div>
-            <form action="https://formspree.io/f/mjkoowzy" method="POST" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 John Apollos Olal Onyango. All rights reserved.</p>
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="reveal">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1>Solving Problems with Data and Code</h1>
+          <p class="subtitle">
+            BSc Data Science & Analytics student (JKUAT) — I build data-driven web applications and visual analytics.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
         </div>
-    </footer>
+        <div class="hero-image">
+          <img src="assets/profile-photo.jpg" alt="Profile photo of John Apollos Olal Onyango" class="profile-photo" />
+        </div>
+      </div>
+    </section>
 
+    <!-- About -->
+    <section id="about" class="container reveal">
+      <h2>About Me</h2>
+      <p>
+        I’m a Data Science & Analytics student at JKUAT (Nairobi). I enjoy applying coursework to real projects (like SupaKonekt),
+        and building solutions that combine clean code, usable interfaces, and meaningful analytics.
+      </p>
+      <div class="about-actions">
+        <a href="assets/docs/My_CV.pdf" class="btn" download>Download Resume (PDF)</a>
+        <a href="assets/docs/My_CV.pdf" target="_blank" rel="noopener" class="btn btn-outline">Open Resume (New Tab)</a>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="container reveal">
+      <h2>Skills (Current)</h2>
+      <p class="muted">A snapshot of my current strengths based on completed coursework and projects.</p>
+
+      <div class="skills-grid">
+        <div class="skill-chip">Python</div>
+        <div class="skill-chip">SQL</div>
+        <div class="skill-chip">Java</div>
+        <div class="skill-chip">C++</div>
+        <div class="skill-chip">JavaScript</div>
+        <div class="skill-chip">HTML & CSS</div>
+        <div class="skill-chip">Git & GitHub</div>
+        <div class="skill-chip">Data Cleaning</div>
+        <div class="skill-chip">Data Visualization</div>
+        <div class="skill-chip">ML (basics)</div>
+        <div class="skill-chip">Database Design</div>
+        <div class="skill-chip">Operating Systems</div>
+        <div class="skill-chip">Computer Networks (basics)</div>
+        <div class="skill-chip">Cloud Concepts</div>
+        <div class="skill-chip">Project Management</div>
+        <div class="skill-chip">Technical Writing</div>
+      </div>
+
+      <!-- Bar chart -->
+      <div class="chart-wrap">
+        <canvas id="skillsChart" width="600" height="380" aria-label="Skills bar chart" role="img"></canvas>
+      </div>
+    </section>
+
+    <!-- Education Timeline -->
+    <section id="education" class="timeline-section reveal">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item completed">
+          <div class="timeline-icon">🎓</div>
+          <div class="timeline-content">
+            <h3>Year 1 (2023–2024)</h3>
+            <p><strong>Focus:</strong> Programming foundations (C++, Web), Databases, Calculus, Probability, Networks, OS.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item completed">
+          <div class="timeline-icon">🎓</div>
+          <div class="timeline-content">
+            <h3>Year 2 (2024)</h3>
+            <p><strong>Focus:</strong> Data Structures & Algorithms, Software Engineering, Cloud, AI, Intro ML, Data Visualization.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item in-progress">
+          <div class="timeline-icon">📖</div>
+          <div class="timeline-content">
+            <h3>Year 3 (2025–2026)</h3>
+            <p><strong>Focus:</strong> Regression, Simulation/Modelling, Security, DB Admin, Project Management.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item expected">
+          <div class="timeline-icon">⏳</div>
+          <div class="timeline-content">
+            <h3>Year 4 (2026–2027)</h3>
+            <p><strong>To cover:</strong> Data Mining, Recommenders, NLP/Sentiment, Big Data, GIS, R, IoT, Capstone Project.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container reveal">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- Startup Growth -->
+        <article class="project-card" data-modal-target="#modal-startup">
+          <div class="pc-top">
+            <h3>Startup Growth Analysis</h3>
+            <span class="pill">Data Science</span>
+          </div>
+          <p>Clustering & EDA on startup growth datasets using Python & Jupyter.</p>
+          <div class="pc-actions">
+            <a href="https://github.com/JohnApollos/Startup_Growth_And_Investment_Data_Analysis" target="_blank" rel="noopener" class="btn btn-small">GitHub</a>
+            <button class="btn btn-outline btn-small modal-open">Details</button>
+          </div>
+        </article>
+
+        <!-- SupaKonekt -->
+        <article class="project-card" data-modal-target="#modal-supakonekt">
+          <div class="pc-top">
+            <h3>SupaKonekt Marketplace</h3>
+            <span class="pill">Web App</span>
+          </div>
+          <p>Kenyan service marketplace: business listings + secure messaging.</p>
+          <div class="pc-actions">
+            <a href="https://supakonekt.vercel.app" target="_blank" rel="noopener" class="btn btn-small">Live Demo</a>
+            <button class="btn btn-outline btn-small modal-open">Details</button>
+          </div>
+        </article>
+
+        <!-- USA Housing -->
+        <article class="project-card" data-modal-target="#modal-housing">
+          <div class="pc-top">
+            <h3>USA Housing Data Visualization</h3>
+            <span class="pill">Data Viz</span>
+          </div>
+          <p>Trend analysis & visualization of U.S. housing market data.</p>
+          <div class="pc-actions">
+            <a href="https://github.com/JohnApollos/USA-Data-Housing-Analysis" target="_blank" rel="noopener" class="btn btn-small">GitHub</a>
+            <button class="btn btn-outline btn-small modal-open">Details</button>
+          </div>
+        </article>
+
+        <!-- Apollos Kitchen -->
+        <article class="project-card" data-modal-target="#modal-kitchen">
+          <div class="pc-top">
+            <h3>Apollos Kitchen App</h3>
+            <span class="pill">Frontend</span>
+          </div>
+          <p>Interactive web app built with plain JS, focusing on UX micro-interactions.</p>
+          <div class="pc-actions">
+            <a href="https://github.com/JohnApollos/apollos-kitchen" target="_blank" rel="noopener" class="btn btn-small">GitHub</a>
+            <button class="btn btn-outline btn-small modal-open">Details</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container reveal">
+      <h2>Contact Me</h2>
+      <form id="contact-form" action="https://formspree.io/f/mjkoowzy" method="POST">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="_replyto" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn" id="submit-btn">Send Message</button>
+        <p id="form-status"></p>
+      </form>
+
+      <div class="contact-socials">
+        <a href="mailto:johnapollosolal@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/john-apollos" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/JohnApollos" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 John Apollos Olal Onyango. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div class="modal" id="modal-startup" aria-hidden="true" role="dialog" aria-labelledby="startupTitle">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <h3 id="startupTitle">Startup Growth Analysis</h3>
+      <p><strong>Tech Stack:</strong> Python, Pandas, Scikit-learn, Matplotlib/Seaborn, Jupyter</p>
+      <p><strong>Challenges:</strong> Noisy growth metrics, feature scaling, choosing K for clustering.</p>
+      <p><strong>Solutions:</strong> Robust preprocessing, elbow & silhouette methods, cluster profiling with visuals.</p>
+      <a href="https://github.com/JohnApollos/Startup_Growth_And_Investment_Data_Analysis" target="_blank" rel="noopener" class="btn">GitHub</a>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-supakonekt" aria-hidden="true" role="dialog" aria-labelledby="supakonektTitle">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <h3 id="supakonektTitle">SupaKonekt Marketplace</h3>
+      <p><strong>Tech Stack:</strong> Next.js, Node.js, MongoDB, Tailwind, REST API</p>
+      <p><strong>Challenges:</strong> Designing scalable collections, auth & session handling, smooth UX on low bandwidth.</p>
+      <p><strong>Solutions:</strong> Normalized schemas + indexes, JWT-based auth, server-side rendering & caching, responsive UI.</p>
+      <a href="https://supakonekt.vercel.app" target="_blank" rel="noopener" class="btn">Live Demo</a>
+      <a href="#" class="btn btn-outline disabled">Private Repo</a>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-housing" aria-hidden="true" role="dialog" aria-labelledby="housingTitle">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <h3 id="housingTitle">USA Housing Data Visualization</h3>
+      <p><strong>Tech Stack:</strong> Python, Pandas, Matplotlib, Jupyter</p>
+      <p><strong>Challenges:</strong> Handling missing values and outliers; communicating trends effectively.</p>
+      <p><strong>Solutions:</strong> Imputation & robust scaling; clear annotated charts and story-focused visuals.</p>
+      <a href="https://github.com/JohnApollos/USA-Data-Housing-Analysis" target="_blank" rel="noopener" class="btn">GitHub</a>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-kitchen" aria-hidden="true" role="dialog" aria-labelledby="kitchenTitle">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <h3 id="kitchenTitle">Apollos Kitchen App</h3>
+      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+      <p><strong>Challenges:</strong> Building intuitive interactions without frameworks.</p>
+      <p><strong>Solutions:</strong> Modular JS, accessible controls, micro-interactions on hover/focus.</p>
+      <a href="https://github.com/JohnApollos/apollos-kitchen" target="_blank" rel="noopener" class="btn">GitHub</a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
