@@ -1,8 +1,8 @@
 # Personal Portfolio Website
 
-This is a personal portfolio website showcasing my skills, projects, and background using only vanilla HTML and CSS.
+This is a personal portfolio website showcasing my skills, projects, and background using HTML, CSS and JavaScript.
 
-![Screenshot of the portfolio website](./screenshot.png)
+![Screenshot of the portfolio website](./assets/screenshot.png)
 
 ---
 
@@ -21,6 +21,7 @@ This is a personal portfolio website showcasing my skills, projects, and backgro
 -   **HTML5:** For the structure and content of the website.
 -   **CSS3:** For all styling, layout (Flexbox & Grid), animations, and responsiveness.
 -   **Formspree:** For handling the contact form submissions.
+-   **Plausible:** For analytics
 
 ---
 
