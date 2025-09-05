@@ -12,7 +12,7 @@
   <meta property="og:description" content="Projects, skills, and contact. Data Science & Analytics student (JKUAT)." />
   <meta property="og:image" content="assets/screenshot.png" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://johnapollos.github.io/My-Portfolio/" />
+  <meta property="og:url" content="https://johnapollosportfolio.netlify.app/" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Favicon -->
@@ -29,10 +29,6 @@
 
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-  <!-- Plausible Analytics (privacy-friendly) -->
-  <!-- CHANGE data-domain to your actual published domain (e.g., johnapollos.github.io or yourcustomdomain.com) -->
-  <script defer data-domain="https://johnapollosportfolio.netlify.app/" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -41,6 +37,8 @@
       <a href="#" class="logo">John Apollos</a>
       <ul>
         <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#education" class="nav-link">Education</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -82,8 +80,42 @@
         and building solutions that combine clean code, usable interfaces, and meaningful analytics.
       </p>
       <div class="about-actions">
-        <a href="assets/My_CV.pdf" class="btn" download>Download Resume (PDF)</a>
+        <a href="assets/My_CV.pdf" class="btn" download>Download Resume</a>
         <a href="assets/My_CV.pdf" target="_blank" rel="noopener" class="btn btn-outline">Open Resume</a>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="container reveal">
+      <h2>Certifications & Training</h2>
+      <div class="certifications-grid">
+        <div class="cert-card">
+          <h3>Virtual Assistant Skills Training</h3>
+          <p><strong>ALX Academy</strong> – Graduated November 2024</p>
+        </div>
+
+        <div class="cert-card">
+          <h3>Software Development</h3>
+          <p><strong>PLP Academy</strong> – In Progress</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="container reveal">
+      <h2>Experience</h2>
+      <div class="experience-grid">
+        <div class="exp-card">
+          <h3>Administrative Assistant</h3>
+          <p><strong>Mag Studios</strong> – Dec 2024 to June 2025</p>
+          <p>Assisted with scheduling, documentation, and project coordination while ensuring smooth day-to-day operations.</p>
+        </div>
+
+        <div class="exp-card">
+          <h3>Freelance Virtual Assistant & Developer</h3>
+          <p><strong>Upwork & Fiverr</strong> – Dec 2023 to Present</p>
+          <p>Worked with clients on tasks including project management, web development, and automation, delivering solutions tailored to business needs.</p>
+        </div>
       </div>
     </section>
 
@@ -132,7 +164,7 @@
         <div class="timeline-item completed">
           <div class="timeline-icon">🎓</div>
           <div class="timeline-content">
-            <h3>Year 2 (2024)</h3>
+            <h3>Year 2 (2024–2025)</h3>
             <p><strong>Focus:</strong> Data Structures & Algorithms, Software Engineering, Cloud, AI, Intro ML, Data Visualization.</p>
           </div>
         </div>
@@ -155,9 +187,23 @@
       </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Projects (Featured + Grid) -->
     <section id="projects" class="container reveal">
       <h2>Projects</h2>
+
+      <!-- Featured Project -->
+      <article class="project-card featured" data-modal-target="#modal-supakonekt">
+        <h3>SupaKonekt – Service Marketplace Platform</h3>
+        <p>
+          A platform connecting businesses and customers in Kenya. Features include service listings, on-site messaging, and secure authentication.
+          Built with <strong>Next.js, Node.js, MongoDB</strong>.
+        </p>
+        <div class="project-links pc-actions">
+          <a href="https://supakonekt.vercel.app" target="_blank" rel="noopener" class="btn btn-small">Live Demo</a>
+          <button class="btn btn-outline btn-small modal-open">Details</button>
+        </div>
+      </article>
+
       <div class="projects-grid">
         <!-- Startup Growth -->
         <article class="project-card" data-modal-target="#modal-startup">
@@ -168,19 +214,6 @@
           <p>Clustering & EDA on startup growth datasets using Python & Jupyter.</p>
           <div class="pc-actions">
             <a href="https://github.com/JohnApollos/Startup_Growth_And_Investment_Data_Analysis" target="_blank" rel="noopener" class="btn btn-small">GitHub</a>
-            <button class="btn btn-outline btn-small modal-open">Details</button>
-          </div>
-        </article>
-
-        <!-- SupaKonekt -->
-        <article class="project-card" data-modal-target="#modal-supakonekt">
-          <div class="pc-top">
-            <h3>SupaKonekt Marketplace</h3>
-            <span class="pill">Web App</span>
-          </div>
-          <p>Kenyan service marketplace: business listings + secure messaging.</p>
-          <div class="pc-actions">
-            <a href="https://supakonekt.vercel.app" target="_blank" rel="noopener" class="btn btn-small">Live Demo</a>
             <button class="btn btn-outline btn-small modal-open">Details</button>
           </div>
         </article>
@@ -232,7 +265,7 @@
 
       <div class="contact-socials">
         <a href="mailto:johnapollosolal@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/john-apollos" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/johnapollosolal" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://github.com/JohnApollos" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
       </div>
     </section>
@@ -295,4 +328,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
