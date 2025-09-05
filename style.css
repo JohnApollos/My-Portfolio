@@ -92,6 +92,46 @@ nav a:hover::after { width: 100%; }
 /* About */
 .about-actions { margin-top: 1.25rem; display: flex; gap: 0.8rem; justify-content: center; }
 
+/* Certifications */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.cert-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.cert-card h3 { color: var(--primary-color); margin-bottom: 0.5rem; }
+
+/* Experience */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.exp-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.exp-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.exp-card h3 { color: var(--primary-color); margin-bottom: 0.5rem; }
+
 /* Skills */
 .skills-grid {
   display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; margin: 1rem 0 2rem;
@@ -138,6 +178,10 @@ nav a:hover::after { width: 100%; }
   background: var(--surface-color); border: 1px solid var(--border-color);
   border-radius: 14px; padding: 1.2rem; display: flex; flex-direction: column; gap: 0.8rem;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.project-card.featured {
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 0 20px rgba(0,170,255,0.12);
 }
 .project-card:hover {
   transform: translateY(-8px); box-shadow: 0 18px 34px rgba(0,0,0,0.28); border-color: rgba(0,170,255,0.35);
